@@ -1,6 +1,6 @@
 {
   "name": "@elsamplio/package-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Test of github packages",
   "main": "index.js",
   "type": "module",
