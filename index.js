@@ -1,3 +1,3 @@
-import whatever from './printFunction.js';
+import printFunction from './printFunction.js';
 
-whatever();
+export default printFunction;
