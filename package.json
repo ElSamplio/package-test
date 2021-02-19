@@ -1,0 +1,22 @@
+{
+  "name": "@elsamplio/package-test",
+  "version": "1.0.0",
+  "description": "Test of github packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElSamplio/package-test.git"
+  },
+  "keywords": [
+    "packages"
+  ],
+  "author": "ElSamplio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ElSamplio/package-test/issues"
+  },
+  "homepage": "https://github.com/ElSamplio/package-test#readme"
+}
