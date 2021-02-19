@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Test of github packages",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "exit 0"
   },

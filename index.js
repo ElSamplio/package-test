@@ -1,1 +1,3 @@
-alert('HEllo World!!')
+import whatever from './printFunction.js';
+
+whatever();
