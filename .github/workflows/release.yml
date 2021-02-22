@@ -23,6 +23,30 @@ jobs:
           release_name: Release ${{ github.ref }}
           body: |
             Changes in this Release
-            - New version, checkin out again
+            - Trying to make everything in a single file
           draft: false
           prerelease: false
+  build-publish:
+  needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+      - run: npm test
+
+  publish-gpr:
+    needs: build-publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
