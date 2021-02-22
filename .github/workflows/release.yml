@@ -23,6 +23,6 @@ jobs:
           release_name: Release ${{ github.ref }}
           body: |
             Changes in this Release
-            - Adding tag
+            - New version, checkin out again
           draft: false
           prerelease: false
