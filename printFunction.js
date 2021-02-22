@@ -1,5 +1,5 @@
 const printSomething = () => {
-    console.log('hola, function in version 1.0.3')
+    console.log('hola!!!, v 1.0.4')
 }
 
 export default printSomething;
