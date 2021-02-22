@@ -1,5 +1,5 @@
 const printSomething = () => {
-    console.log('hola!!!, v 1.0.4')
+    console.log('If this is printed, releasing and packagin on commit is woterking great!!!')
 }
 
 export default printSomething;
